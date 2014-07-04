@@ -1,0 +1,116 @@
+__author__ = 'yingbozhan'
+
+####################
+# Cron Job to trigger update every day
+# 1. update: Verify with Max + 1 ==> No result, No update
+# 2. init: Init the whole data_requester with data stored in csv file
+####################
+
+import unicodedata
+import urllib
+import urllib2
+import re
+import json
+
+def get_config():
+    f = open('config', 'r')
+    configs = {}
+    for config_read in f.readlines():
+        parts = config_read.split(':')
+        configs[parts[0].strip(' \n')] = parts[1].strip(' \n')
+    f.close()
+    return configs
+
+
+def update_config(configs):
+    f = open('config', 'w')
+    content = ''
+    for key in configs.keys():
+        content += key + ':' + configs[key] + '\n'
+    f.write(content)
+    f.close()
+
+def get_current():
+    f = open('data', 'r')
+    data = {}
+    for oneday in f.readlines():
+        parts = oneday.split(',')
+        data[parts[0]] = parts[1:-1]
+    f.close()
+    print data
+    return data
+
+
+def update_current(data):
+    f = open('data', 'w')
+    content = ''
+    for key in data.keys():
+        content += str(key) + ','
+        for value in data[key]:
+            content += str(value) + ','
+        content += '\n'
+    f.write(content)
+    f.close()
+
+
+def add_data(data, new_data):
+    data.update(new_data)
+    update_current(data)
+
+
+def http_request_with_drawno(drawno):
+    url = 'http://www.singaporepools.com.sg/_Layouts/TotoApplication/TotoCommonPage.aspx/getTotoResultByDrawNumber'
+    values = {'lang': 'en',
+              'drawno': drawno, }
+    headers = {'Accept': 'application/json, text/javascript, */*; q=0.01',
+               'Content-Type': 'application/json; charset=utf-8'}
+
+    data = json.dumps(values)
+    req = urllib2.Request(url, data, headers)
+    response = urllib2.urlopen(req)
+    return response.read()
+
+
+def process(raw_http_response):
+    http_response = raw_http_response.decode("unicode-escape")
+    print http_response
+    http_response_parts = http_response.split('\n')
+    win = []
+    for response in http_response_parts:
+        if "winning_numbers_toto_b" not in response: continue
+        try:
+            regex = re.compile(">\d[0-9]?<")
+            raw_win = regex.findall(response)
+            win.extend([ball[1:-1] for ball in raw_win])
+        except:
+            return None
+    if len(win) == 7:
+        return win
+    else:
+        return None
+
+
+def get_update_on(drawno):
+    return process(http_request_with_drawno(drawno))
+
+
+def main():
+    configs = get_config()
+    max_drawno = max(2965, configs.get('max_drawno', 0))
+    min_drawno = min(2652, configs.get('min_drawno', 0))
+    update_on = min_drawno
+    data = get_current()
+    if data.get(max_drawno, None) is not None and \
+       data.get(min_drawno, None) is not None:
+        update_on = max_drawno + 1
+    counter = 315
+    while counter > 0:
+        value = get_update_on(update_on)
+        if value is not None:
+            data[update_on] = value
+        else:
+            break
+        update_current(data)
+        counter -= 1
+        update_on += 1
+main()
