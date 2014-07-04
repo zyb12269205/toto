@@ -110,7 +110,7 @@ def main():
             data[update_on] = value
         else:
             break
-        update_current(data)
         counter -= 1
         update_on += 1
+    update_current(data)
 main()
