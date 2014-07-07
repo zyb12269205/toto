@@ -35,7 +35,8 @@ def get_current():
     data = {}
     for oneday in f.readlines():
         parts = oneday.split(',')
-        data[parts[0]] = parts[1:-1]
+        if parts[0] not in data.keys() or (parts[0] in data.keys() and len(parts[1:-1])> len(data[parts[0]])):
+            data[parts[0]] = parts[1:-1]
     f.close()
     print data
     return data
@@ -106,11 +107,29 @@ def main():
     counter = 315
     while counter > 0:
         value = get_update_on(update_on)
-        if value is not None:
+        if value is not None and data.get(update_on,None) is not None and len(data[update_on]) ==7:
+            pass
+        elif value is not None and len(value) == 7:
             data[update_on] = value
         else:
             break
         counter -= 1
         update_on += 1
     update_current(data)
-main()
+
+
+def clear_data():
+    data = get_current()
+    new_data = {}
+    for key in data.keys():
+        if new_data.get(key, None) is None:
+            new_data[key] = data[key]
+        elif len(new_data[key]) < len(data[key]):
+                new_data[key] = data[key]
+        else:
+            pass
+    update_current(new_data)
+
+
+#clear_data()
+print get_update_on(2753)
