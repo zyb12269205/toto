@@ -11,6 +11,7 @@ import urllib
 import urllib2
 import re
 import json
+import time
 
 def get_config():
     f = open('config', 'r')
@@ -69,6 +70,7 @@ def http_request_with_drawno(drawno):
     data = json.dumps(values)
     req = urllib2.Request(url, data, headers)
     response = urllib2.urlopen(req)
+    time.sleep(1)
     return response.read()
 
 
@@ -132,4 +134,4 @@ def clear_data():
 
 
 #clear_data()
-print get_update_on(2753)
+#print get_update_on(2753)

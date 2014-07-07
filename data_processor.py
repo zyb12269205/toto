@@ -1,4 +1,5 @@
 __author__ = 'yingbozhan'
+import numpy
 
 def get_current():
     f = open('data', 'r')
@@ -21,6 +22,6 @@ def geo_mean(list_int):
 
 import math
 data = get_current()
-data_geo = [geo_mean(x) for x in data.values()]
-print sorted(set(data_geo))
+data_geo = {x:geo_mean(data[x]) for x in data.keys()}
+print sorted(data_geo.iteritems())
 
