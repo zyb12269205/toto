@@ -12,7 +12,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/toto$data_requester.coverage" NAME="data_requester Coverage Results" MODIFIED="1404715563954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/toto$data_requester.coverage" NAME="data_requester Coverage Results" MODIFIED="1404803225987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -30,9 +30,7 @@
         <entry file="file://$PROJECT_DIR$/data_requester.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="137" column="0" selection-start="3676" selection-end="3676" vertical-scroll-proportion="0.0" vertical-offset="2011" max-vertical-offset="2431">
-              <folding>
-                <element signature="e#237#255#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,7 +41,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="26" selection-start="0" selection-end="8095" vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="5457">
+            <state line="15" column="26" selection-start="0" selection-end="8095" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="5457">
               <folding />
             </state>
           </provider>
@@ -55,7 +53,7 @@
             <state />
           </provider>
           <provider editor-type-id="text-editor">
-            <state line="315" column="0" selection-start="8095" selection-end="8095" vertical-scroll-proportion="0.0" vertical-offset="4994" max-vertical-offset="5457">
+            <state line="315" column="0" selection-start="8095" selection-end="8095" vertical-scroll-proportion="0.0" vertical-offset="5355" max-vertical-offset="5457">
               <folding />
             </state>
           </provider>
@@ -64,8 +62,10 @@
       <file leaf-file-name="data_processor.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="22" selection-start="418" selection-end="418" vertical-scroll-proportion="0.6496815" vertical-offset="0" max-vertical-offset="561">
-              <folding />
+            <state line="20" column="22" selection-start="457" selection-end="457" vertical-scroll-proportion="0.47095436" vertical-offset="113" max-vertical-offset="697">
+              <folding>
+                <element signature="e#27#58#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,10 +89,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2" />
-    <option name="y" value="2" />
-    <option name="width" value="1598" />
-    <option name="height" value="868" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="886" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -144,10 +144,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data_processor.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Software/WinPython_Install/WinPython-32bit-2.7.6.3/python-2.7.6" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -260,6 +264,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -281,9 +288,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -382,7 +386,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="2" width="1598" height="868" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -390,19 +394,19 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2590909" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26251605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39648172" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32746956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3271523" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3271523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -420,9 +424,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25584415" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32746956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32746956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -463,10 +467,44 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data_requester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="24" selection-start="3023" selection-end="3023" vertical-scroll-proportion="0.0" vertical-offset="1587" max-vertical-offset="2074">
+        <state line="137" column="0" selection-start="3676" selection-end="3676" vertical-scroll-proportion="0.0" vertical-offset="2011" max-vertical-offset="2431">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="26" selection-start="0" selection-end="8095" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="5457">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_backup">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="315" column="0" selection-start="8095" selection-end="8095" vertical-scroll-proportion="0.0" vertical-offset="5355" max-vertical-offset="5457">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="12" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="578">
           <folding>
-            <element signature="e#237#255#0" expanded="true" />
+            <element signature="e#27#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_requester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="24" selection-start="3023" selection-end="3023" vertical-scroll-proportion="0.0" vertical-offset="1587" max-vertical-offset="2074">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -483,27 +521,27 @@
     <entry file="file://$PROJECT_DIR$/data_processor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="27" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="544">
-          <folding />
+          <folding>
+            <element signature="e#27#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_requester.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="17" selection-start="2542" selection-end="2542" vertical-scroll-proportion="0.0" vertical-offset="942" max-vertical-offset="1972">
-          <folding>
-            <element signature="e#237#255#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="314" column="20" selection-start="7481" selection-end="7481" vertical-scroll-proportion="0.0" vertical-offset="4386" max-vertical-offset="7786">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config">
@@ -514,9 +552,7 @@
     <entry file="file://$PROJECT_DIR$/data_requester.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="106" column="0" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.0" vertical-offset="1406" max-vertical-offset="1904">
-          <folding>
-            <element signature="e#237#255#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -538,38 +574,38 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_backup">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="315" column="0" selection-start="8095" selection-end="8095" vertical-scroll-proportion="0.0" vertical-offset="4994" max-vertical-offset="5457">
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="0" selection-end="8095" vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="5457">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="26" selection-start="0" selection-end="8095" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="5457">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_requester.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="137" column="0" selection-start="3676" selection-end="3676" vertical-scroll-proportion="0.0" vertical-offset="2011" max-vertical-offset="2431">
-          <folding>
-            <element signature="e#237#255#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_processor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="418" selection-end="418" vertical-scroll-proportion="0.6496815" vertical-offset="0" max-vertical-offset="561">
-          <folding />
+        <state line="20" column="22" selection-start="457" selection-end="457" vertical-scroll-proportion="0.47095436" vertical-offset="113" max-vertical-offset="697">
+          <folding>
+            <element signature="e#27#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
