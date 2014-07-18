@@ -1,6 +1,9 @@
 import math
 import pylab as pl
 import random
+import matplotlib.pyplot as plt
+import numpy as np
+
 
 def geo_mean(list_int):
     product = 1
@@ -32,7 +35,22 @@ data_av = {x:average_mean(data[x]) for x in data.keys()}
 data_ge = {x:geo_mean(data[x]) for x in data.keys()}
 data_ha = {x:harmony_average(data[x]) for x in data.keys()}
 
-pl.plot(range(0,len(data_av.keys())), sorted(data_av.values()))
-pl.plot(range(0,len(data_ge.keys())), sorted(data_ge.values()))
-pl.plot(range(0,len(data_ha.keys())), sorted(data_ha.values()))
-pl.show()
+# pl.plot(range(0,len(data_av.keys())), sorted(data_av.values()))
+# pl.plot(range(0,len(data_ge.keys())), sorted(data_ge.values()))
+# pl.plot(range(0,len(data_ha.keys())), sorted(data_ha.values()))
+# pl.show()
+
+#
+# x = data_ge.values()
+# hist, bins = np.histogram(x, bins=20)
+# width = 0.7 * (bins[1] - bins[0])
+# center = (bins[:-1] + bins[1:]) / 2
+# plt.bar(center, hist, align='center', width=width)
+# plt.show()
+
+q1 = np.percentile(data_ge.values(), 25)
+q2 = np.percentile(data_ge.values(), 50)
+q3 = np.percentile(data_ge.values(), 75)
+print q1
+print q2
+print q3
