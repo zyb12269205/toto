@@ -106,7 +106,7 @@ def main():
     if data.get(max_drawno, None) is not None and \
        data.get(min_drawno, None) is not None:
         update_on = max_drawno + 1
-    counter = 315
+    counter = 400
     while counter > 0:
         value = get_update_on(update_on)
         if value is not None and data.get(update_on,None) is not None and len(data[update_on]) ==7:
@@ -135,3 +135,4 @@ def clear_data():
 
 #clear_data()
 #print get_update_on(2753)
+main()
