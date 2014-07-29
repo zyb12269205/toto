@@ -37,7 +37,7 @@ def get_current():
     for oneday in f.readlines():
         parts = oneday.split(',')
         if parts[0] not in data.keys() or (parts[0] in data.keys() and len(parts[1:-1])> len(data[parts[0]])):
-            data[parts[0]] = parts[1:-1]
+            data[int(parts[0])] = [int(v) for v in parts[1:-1]]
     f.close()
     print data
     return data
@@ -103,11 +103,11 @@ def main():
     min_drawno = min(2652, configs.get('min_drawno', 0))
     update_on = min_drawno
     data = get_current()
-    if data.get(max_drawno, None) is not None and \
-       data.get(min_drawno, None) is not None:
-        update_on = max_drawno + 1
-    counter = 400
+    counter = 50
     while counter > 0:
+        if data.get(update_on, None) is not None:
+          update_on += 1
+          continue
         value = get_update_on(update_on)
         if value is not None and data.get(update_on,None) is not None and len(data[update_on]) ==7:
             pass
@@ -135,4 +135,20 @@ def clear_data():
 
 #clear_data()
 #print get_update_on(2753)
-main()
+#main()
+
+
+def debug():
+    configs = get_config()
+    data = get_current()
+    update_on_list = ['2770','2786','2750','2929','2959','2753','2874']
+
+    for update_on in update_on_list:
+        value = get_update_on(update_on)
+        if value is not None and data.get(update_on,None) is not None and len(data[update_on]) ==7:
+            pass
+        elif value is not None and len(value) == 7:
+            data[update_on] = value
+        else:
+            break
+    update_current(data)
